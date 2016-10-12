@@ -2,8 +2,10 @@
 <head>
 <title>Contact Page 
 </title>
+<meta charset="utf-8">
 <style>
-body {margin:0;
+body {
+      margin:0;
       background-color:	#008080;
 }
 
@@ -22,7 +24,7 @@ body {margin:0;
     float: left;
 }
 
-li a {
+#lus li a {
     display: block;
     color: white;
     text-align: center;
@@ -30,13 +32,15 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
+#lus li a:hover:not(.active) {
     background-color: #111;
 }
 
 .active {
     background-color: #4CAF50;
 }
+   
+          
 
 h1{
     margin-top: 60px;
@@ -51,15 +55,11 @@ input[type=text] {
     margin: 8px 8px 9px 25px  ;
     box-sizing: border-box;
     border: none;
-    background-color: #3CBC8D;
+    background-color: 	#000000;
     color: 	#F0F8FF;
 	
 }
-#erg{
-    margin-top: 10px;
-    
 
-}
 
 
 #qartez{
@@ -67,6 +67,50 @@ margin-top:10px;
     float:left;
    
     }
+	
+	
+  .button {
+  display: inline-block;
+  padding: 15px 170px;
+  margin-left:25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: black}
+
+.button:active {
+  background-color: black;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#zip{
+margin-left:20px;
+
+
+}
+footer {
+    padding: 1em;
+    color: white;
+    background-color: #556B2F;
+    clear: left;
+    text-align: center;
+	margin-top:196px;
+    margin-bottom: 0px;
+   }
+   
+   
+   
+
+
 
 
 
@@ -81,14 +125,14 @@ margin-top:10px;
   <li><a class="active" href="#contact">Contact Me</a></li>
 </ul>
 <h1>Contact Page </h1>
-<hr id = "gic" width="1362" size="2" color="#556B2F" />
+<hr id = "gic" width="1362" size="2" color="black">
 
 
 <div id = "qartez">
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5332.600682225267!2d44.533493322171644!3d40.19033683978232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2s!4v1476191235360" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
-<div id = "erg">
-<form>
+
+<form id ="zip">
   <label for="fname"></label>
   <input type="text"  placeholder="Name">
   <label for="lname"></label>
@@ -97,10 +141,12 @@ margin-top:10px;
   <input type="text" placeholder="Phone">
   <label for="lname"></label>
   <input type="text" placeholder="Massage">
-  <label for="lname"></label>
-  <input type="text"  placeholder="Send">
+ 
 </form>
-</div>
+
+<button class="button">Send</button>
+
+<footer>Copyright © Khoren Grigoryan</footer>
 
 </body>
 </html>
