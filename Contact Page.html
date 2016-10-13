@@ -6,25 +6,26 @@
 <style>
 body {
       margin:0;
-      background-color:	#008080;
+      background-color:		#DEB887;
 }
-
-#lus {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
 }
 
-#lus li {
+li {
     float: left;
+    border-right:1px solid #bbb;
 }
 
-#lus li a {
+li:last-child {
+    border-right: none;
+}
+
+li a {
     display: block;
     color: white;
     text-align: center;
@@ -32,7 +33,7 @@ body {
     text-decoration: none;
 }
 
-#lus li a:hover:not(.active) {
+li a:hover:not(.active) {
     background-color: #111;
 }
 
@@ -43,11 +44,11 @@ body {
           
 
 h1{
-    margin-top: 60px;
-    
+    margin-top: 10 px;
+	
+	}
+	
 
-
-}
 
 input[type=text] {
     width: 30%;
@@ -103,7 +104,7 @@ footer {
     background-color: #556B2F;
     clear: left;
     text-align: center;
-	margin-top:196px;
+	margin-top:188px;
     margin-bottom: 0px;
    }
    
@@ -119,13 +120,15 @@ footer {
 <body>
 
 
-<ul id = "lus">
-  <li><a href="file:///C:/Users/Grigoryan/Desktop/portfolio/Task2.html">Home</a></li>
-  <li><a href="file:///C:/Users/Grigoryan/Desktop/portfolio/About.html">About</a></li>
-  <li><a class="active" href="#contact">Contact Me</a></li>
+<ul id = "jar">
+  <li><a href="file:///C:/Users/Grigoryan/Desktop/Port/Home.html">Home</a></li>
+  <li> <a href="file:///C:/Users/Grigoryan/Desktop/Port/About.html">About</a></li>
+  <li><a class="active" href="#contact">Contact Page</a></li>
+  
+  
 </ul>
 <h1>Contact Page </h1>
-<hr id = "gic" width="1362" size="2" color="black">
+<hr id = "gic" width="1362" size="2" color="#556B2F">
 
 
 <div id = "qartez">
